@@ -2,7 +2,11 @@
     <div>
         <div class="title">周末去哪儿</div>
         <ul>
+<<<<<<< HEAD
             <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+=======
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
+>>>>>>> index-ajax
                 <div class="item-img-wrapper">
                     <img class="item-img" :src="item.imgUrl" alt="">
                 </div>
@@ -18,6 +22,7 @@
 <script>
 export default {
   name: 'HomeWeekend',
+<<<<<<< HEAD
   data () {
     return {
       recommendList: [
@@ -52,6 +57,13 @@ export default {
           desc: '到大自然中享受“天然空调”的清凉'
         }
       ]
+=======
+  props: {
+    list: Array
+  },
+  data () {
+    return {
+>>>>>>> index-ajax
     }
   }
 }
@@ -59,14 +71,21 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   .title
+<<<<<<< HEAD
     margin-top: .2rem
+=======
+>>>>>>> index-ajax
     line-height: .8rem
     background: #eeeeee
     text-indent: .2rem
   .item-img-wrapper
     overflow: hidden
     height: 0
+<<<<<<< HEAD
     padding-bottom: 33.9%
+=======
+    padding-bottom: 37.09%
+>>>>>>> index-ajax
     .item-img
       width: 100%
   .item-info

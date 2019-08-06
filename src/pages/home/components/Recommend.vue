@@ -1,8 +1,16 @@
+<<<<<<< HEAD
     <template>
     <div>
         <div class="title">热销推荐</div>
         <ul>
             <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+=======
+<template>
+    <div>
+        <div class="title">热销推荐</div>
+        <ul>
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
+>>>>>>> index-ajax
                 <img class="item-img" :src="item.imgUrl" alt="">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -17,6 +25,7 @@
 <script>
 export default {
   name: 'HomeRecommend',
+<<<<<<< HEAD
   data () {
     return {
       recommendList: [
@@ -51,6 +60,13 @@ export default {
           desc: '峰峦叠翠，野卉生香，云影波光，美景如画'
         }
       ]
+=======
+  props: {
+    list: Array
+  },
+  data () {
+    return {
+>>>>>>> index-ajax
     }
   }
 }
